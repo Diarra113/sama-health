@@ -1,0 +1,155 @@
+.resp-titre { color: #1B5173; font-size: 30px; font-weight: 700; margin: 0 0 8px; }
+.resp-soustitre { color: #64748b; font-size: 17px; margin: 0 0 28px; }
+.resp-message { color: #64748b; font-size: 17px; }
+.resp-message-petit { color: #94a3b8; font-size: 15px; }
+
+.resp-grille-stats { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+
+.resp-carte-stat { background-color: #ffffff; border-radius: 14px; box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06); padding: 28px; }
+
+.resp-icone-stat { width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+.resp-icone-bleu { background-color: #eef2f7; color: #1B5173; }
+.resp-icone-vert { background-color: #dcfce7; color: #166534; }
+.resp-icone-orange { background-color: #fef3c7; color: #92400e; }
+.resp-icone-rouge { background-color: #fee2e2; color: #991b1b; }
+
+.resp-nombre { color: #1f2430; font-size: 34px; font-weight: 800; margin: 0 0 6px; }
+.resp-label { color: #64748b; font-size: 16px; font-weight: 600; margin: 0; }
+
+.resp-section { background-color: #ffffff; border-radius: 14px; box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06); padding: 28px; margin-bottom: 22px; }
+.resp-section-titre { color: #1B5173; font-size: 20px; font-weight: 700; margin: 0 0 16px; }
+
+.resp-carte-file { display: flex; align-items: center; gap: 18px; background-color: #f8fafc; border-radius: 10px; padding: 14px 18px; margin-bottom: 8px; }
+.resp-heure-file { color: #1B5173; font-size: 16px; font-weight: 700; min-width: 60px; }
+.resp-patient-file { color: #1f2430; font-size: 17px; flex: 1; }
+
+.resp-badge-confirme { background-color: #dcfce7; color: #166534; font-size: 14px; font-weight: 600; padding: 5px 14px; border-radius: 20px; }
+.resp-badge-attente { background-color: #fef3c7; color: #92400e; font-size: 14px; font-weight: 600; padding: 5px 14px; border-radius: 20px; }
+.resp-badge-rejete { background-color: #fee2e2; color: #991b1b; font-size: 14px; font-weight: 600; padding: 5px 14px; border-radius: 20px; }
+
+.resp-carte-rdv { background-color: #ffffff; border-radius: 14px; box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06); padding: 22px 26px; margin-bottom: 14px; }
+.resp-rdv-entete { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.resp-rdv-patient { color: #1f2430; font-size: 18px; font-weight: 700; margin: 0; }
+.resp-rdv-date { color: #64748b; font-size: 16px; margin: 0 0 14px; }
+
+.resp-rdv-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.resp-input-motif { flex: 1; min-width: 200px; border: 1px solid #cbd5e1; border-radius: 8px; padding: 10px 14px; font-size: 15px; outline: none; }
+.resp-btn-confirmer { background-color: #16a34a; color: #ffffff; border: none; padding: 10px 18px; border-radius: 8px; font-size: 15px; font-weight: 600; cursor: pointer; }
+.resp-btn-rejeter { background-color: #dc2626; color: #ffffff; border: none; padding: 10px 18px; border-radius: 8px; font-size: 15px; font-weight: 600; cursor: pointer; }
+
+.resp-carte-medecin { display: flex; align-items: center; gap: 16px; background-color: #ffffff; border-radius: 14px; box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06); padding: 18px 22px; margin-bottom: 12px; }
+.resp-avatar-medecin { width: 50px; height: 50px; background-color: #1B5173; color: #ffffff; font-weight: 700; font-size: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.resp-infos-medecin { flex: 1; }
+.resp-nom-medecin { color: #1f2430; font-size: 17px; font-weight: 600; margin: 0 0 3px; }
+.resp-fonction-medecin { color: #64748b; font-size: 14px; margin: 0; }
+
+.resp-toggle-presence { border: none; padding: 10px 18px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; }
+.resp-present { background-color: #dcfce7; color: #166534; }
+.resp-absent { background-color: #f1f5f9; color: #64748b; }
+
+.resp-carte-parametres { background-color: #ffffff; border-radius: 14px; box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06); padding: 32px; max-width: 600px; }
+
+.resp-label { display: block; color: #1f2430; font-size: 15px; font-weight: 600; margin-bottom: 7px; }
+.resp-input { width: 100%; border: 1px solid #cbd5e1; border-radius: 9px; padding: 13px 16px; font-size: 16px; margin-bottom: 18px; outline: none; box-sizing: border-box; }
+.resp-input:focus { border-color: #1B5173; }
+
+.resp-carte-parametres { background-color: #ffffff; border-radius: 14px; box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06); padding: 36px; max-width: 760px; margin: 0 auto; }
+
+.resp-grille-params { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 24px; margin-bottom: 8px; }
+
+.resp-jours-grille { display: flex; gap: 8px; margin-bottom: 22px; }
+.resp-jour-btn { flex: 1; background-color: #f1f5f9; border: none; color: #64748b; padding: 12px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; }
+.resp-jour-actif { background-color: #1B5173; color: #ffffff; }
+
+.resp-message-succes { background-color: #dcfce7; color: #166534; padding: 12px 16px; border-radius: 8px; font-size: 15px; font-weight: 600; margin-bottom: 16px; }
+
+.resp-btn-enregistrer { width: 100%; background-color: #1B5173; color: #ffffff; border: none; padding: 15px; border-radius: 9px; font-size: 16px; font-weight: 600; cursor: pointer; }
+
+.resp-absences-avenir { color: #dc2626; font-size: 13px; margin: 4px 0 0; }
+
+.resp-sous-titre-section {
+  color: #1B5173;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 20px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #eef2f7;
+}
+
+.resp-erreur-inline {
+  color: #991b1b;
+  background-color: #fee2e2;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.resp-carte-file-terminee {
+  opacity: 0.6;
+  background-color: #f0fdf4;
+}
+
+.resp-sous-titre-section {
+  color: #1B5173;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 28px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #eef2f7;
+}
+
+.resp-carte-cliquable {
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.15s ease;
+  text-align: left;
+  font-family: inherit;
+  border: none;
+}
+
+.resp-carte-cliquable:hover {
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.12);
+  transform: translateY(-2px);
+}
+
+.resp-voir-plus {
+  color: #1B5173;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px 0 0;
+}
+
+.resp-bientot {
+  background-color: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 14px;
+  padding: 24px 28px;
+  margin-top: 28px;
+}
+
+.resp-bientot-titre {
+  color: #475569;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.resp-bientot-texte {
+  color: #94a3b8;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.resp-icone-violet { background-color: #ede9fe; color: #6d28d9; }
+
+.resp-mention-paiement {
+  color: #92400e;
+  background-color: #fef3c7;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+}

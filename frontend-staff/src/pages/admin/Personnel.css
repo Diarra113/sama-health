@@ -1,0 +1,229 @@
+.personnel-entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.personnel-entete h1 {
+  color: #1B5173;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.personnel-btn-ajouter {
+  background-color: #1B5173;
+  color: #ffffff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.personnel-btn-ajouter:hover {
+  background-color: #143F58;
+}
+
+.personnel-message {
+  color: #64748b;
+  font-size: 16px;
+}
+
+.personnel-section {
+  margin-bottom: 32px;
+}
+
+.personnel-section-titre {
+  color: #1B5173;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 14px;
+}
+
+.personnel-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.personnel-carte {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.personnel-avatar {
+  width: 44px;
+  height: 44px;
+  background-color: #1B5173;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.personnel-infos {
+  flex: 1;
+}
+
+.personnel-nom {
+  color: #1f2430;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 2px;
+}
+
+.personnel-email {
+  color: #64748b;
+  font-size: 14px;
+  margin: 0 0 2px;
+}
+
+.personnel-detail {
+  color: #1B5173;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.personnel-btn-supprimer {
+  background: none;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.personnel-btn-supprimer:hover {
+  background-color: #fef2f2;
+}
+
+.personnel-modal-fond {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 100;
+}
+
+.personnel-modal {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 36px 40px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.personnel-modal h2 {
+  color: #1B5173;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+
+.personnel-label {
+  display: block;
+  color: #1f2430;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.personnel-input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 15px;
+  margin-bottom: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.personnel-input:focus {
+  border-color: #1B5173;
+}
+
+.personnel-ligne-champs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.personnel-erreur {
+  color: #b45309;
+  background-color: #fef3c7;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.personnel-modal-boutons {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.personnel-btn-annuler {
+  flex: 1;
+  background-color: #ffffff;
+  border: 2px solid #cbd5e1;
+  color: #475569;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.personnel-btn-creer {
+  flex: 1;
+  background-color: #1B5173;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.personnel-recap {
+  color: #334155;
+  font-size: 15px;
+  margin: 0 0 16px;
+}
+
+.personnel-identifiants {
+  background-color: #f1f5f9;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+}
+
+.personnel-identifiants p {
+  color: #1f2430;
+  font-size: 15px;
+  margin: 0 0 8px;
+}

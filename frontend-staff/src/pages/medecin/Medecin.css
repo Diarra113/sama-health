@@ -1,0 +1,170 @@
+.med-titre { color: #1B5173; font-size: 30px; font-weight: 700; margin: 0 0 8px; }
+.med-soustitre { color: #64748b; font-size: 17px; margin: 0 0 28px; }
+.med-message { color: #64748b; font-size: 17px; }
+.med-message-petit { color: #94a3b8; font-size: 15px; }
+
+.med-grille-stats { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; margin-bottom: 24px; }
+.med-carte-stat { background-color: #ffffff; border-radius: 14px; box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06); padding: 28px; }
+.med-icone-stat { width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+.med-icone-bleu { background-color: #eef2f7; color: #1B5173; }
+.med-icone-vert { background-color: #dcfce7; color: #166534; }
+.med-icone-orange { background-color: #fef3c7; color: #92400e; }
+.med-nombre { color: #1f2430; font-size: 34px; font-weight: 800; margin: 0 0 6px; }
+.med-label { color: #64748b; font-size: 16px; font-weight: 600; margin: 0; }
+
+.med-banniere-absence { background-color: #fef3c7; border: 1px solid #fde68a; border-radius: 12px; padding: 16px 22px; margin-bottom: 24px; display: flex; align-items: center; gap: 12px; color: #92400e; font-size: 15px; font-weight: 600; }
+
+.med-section { background-color: #ffffff; border-radius: 14px; box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06); padding: 28px; margin-bottom: 22px; }
+.med-section-titre { color: #1B5173; font-size: 20px; font-weight: 700; margin: 0 0 16px; }
+
+.med-carte-patient { display: flex; align-items: center; gap: 16px; background-color: #f8fafc; border-radius: 10px; padding: 14px 18px; margin-bottom: 8px; }
+.med-heure-patient { color: #1B5173; font-size: 16px; font-weight: 700; min-width: 70px; }
+.med-nom-patient { color: #1f2430; font-size: 17px; flex: 1; }
+.med-badge-termine { background-color: #dcfce7; color: #166534; font-size: 13px; font-weight: 600; padding: 5px 14px; border-radius: 20px; }
+.med-btn-vu { background-color: #1B5173; color: #ffffff; border: none; padding: 9px 18px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; }
+.med-btn-vu:hover { background-color: #143F58; }
+
+.med-carte-planning { background-color: #ffffff; border-radius: 14px; box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06); padding: 22px 26px; margin-bottom: 14px; }
+.med-planning-entete { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.med-planning-dates { color: #1f2430; font-size: 17px; font-weight: 700; margin: 0; }
+.med-planning-commentaire { color: #64748b; font-size: 15px; margin: 8px 0 0; }
+.med-planning-motif { color: #991b1b; font-size: 14px; margin: 8px 0 0; font-style: italic; }
+
+.med-badge-en_attente { background-color: #fef3c7; color: #92400e; font-size: 13px; font-weight: 600; padding: 5px 14px; border-radius: 20px; }
+.med-badge-valide { background-color: #dcfce7; color: #166534; font-size: 13px; font-weight: 600; padding: 5px 14px; border-radius: 20px; }
+.med-badge-rejete { background-color: #fee2e2; color: #991b1b; font-size: 13px; font-weight: 600; padding: 5px 14px; border-radius: 20px; }
+
+.med-carte-formulaire { background-color: #ffffff; border-radius: 14px; box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06); padding: 32px; max-width: 600px; margin-bottom: 28px; }
+.med-label { display: block; color: #1f2430; font-size: 15px; font-weight: 600; margin-bottom: 7px; }
+.med-input { width: 100%; border: 1px solid #cbd5e1; border-radius: 9px; padding: 13px 16px; font-size: 16px; margin-bottom: 18px; outline: none; box-sizing: border-box; font-family: inherit; }
+.med-input:focus { border-color: #1B5173; }
+.med-textarea { min-height: 80px; resize: vertical; }
+.med-ligne-champs { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.med-btn-soumettre { width: 100%; background-color: #1B5173; color: #ffffff; border: none; padding: 15px; border-radius: 9px; font-size: 16px; font-weight: 600; cursor: pointer; }
+.med-message-succes { background-color: #dcfce7; color: #166534; padding: 12px 16px; border-radius: 8px; font-size: 15px; font-weight: 600; margin-bottom: 16px; }
+.med-erreur { color: #b45309; background-color: #fef3c7; border-radius: 8px; padding: 12px 16px; font-size: 15px; font-weight: 600; margin-bottom: 16px; }
+
+.med-carte-absence { background-color: #ffffff; border-radius: 14px; box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06); padding: 36px; max-width: 560px; text-align: center; }
+.med-statut-present { color: #166534; font-size: 20px; font-weight: 700; margin: 0 0 16px; }
+.med-statut-absent { color: #991b1b; font-size: 20px; font-weight: 700; margin: 0 0 16px; }
+.med-btn-absence { background-color: #dc2626; color: #ffffff; border: none; padding: 14px 28px; border-radius: 9px; font-size: 16px; font-weight: 600; cursor: pointer; }
+.med-btn-annuler-absence { background-color: #16a34a; color: #ffffff; border: none; padding: 14px 28px; border-radius: 9px; font-size: 16px; font-weight: 600; cursor: pointer; }
+
+.med-deux-colonnes { display: flex; gap: 24px; align-items: flex-start; }
+.med-colonne-large { flex: 2; }
+.med-colonne-etroite { flex: 1; min-width: 280px; }
+.med-carte-pleine-largeur { margin-bottom: 28px; }
+.med-aide-absence { color: #64748b; font-size: 14px; margin: 0 0 16px; }
+.med-btn-absence-petit { width: 100%; background-color: #dc2626; color: #ffffff; border: none; padding: 12px; border-radius: 9px; font-size: 15px; font-weight: 600; cursor: pointer; }
+.med-sous-titre-absences { color: #1B5173; font-size: 16px; font-weight: 700; margin: 0 0 14px; }
+.med-ligne-absence { display: flex; justify-content: space-between; align-items: center; background-color: #f8fafc; border-radius: 8px; padding: 10px 14px; margin-bottom: 8px; font-size: 15px; color: #1f2430; }
+.med-btn-annuler-petit { background: none; border: 1px solid #cbd5e1; color: #64748b; padding: 5px 12px; border-radius: 6px; font-size: 13px; cursor: pointer; }
+
+.med-sous-titre-section {
+  color: #1B5173;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 28px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.med-carte-cliquable {
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.15s ease;
+  text-align: left;
+  font-family: inherit;
+  border: none;
+}
+
+.med-carte-cliquable:hover {
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.12);
+  transform: translateY(-2px);
+}
+
+.med-voir-plus {
+  color: #1B5173;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px 0 0;
+}
+
+.med-bientot {
+  background-color: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 14px;
+  padding: 24px 28px;
+  margin-top: 28px;
+}
+
+.med-bientot-titre {
+  color: #475569;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.med-bientot-texte {
+  color: #94a3b8;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.med-badge-non-presente {
+  background-color: #fee2e2;
+  color: #991b1b;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 20px;
+}
+
+.med-btn-retard {
+  background-color: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+  font-size: 12px;
+  padding: 6px 12px;
+}
+
+.med-btn-retard:hover {
+  background-color: #e2e8f0;
+}
+
+.med-carte-patient-expandable { margin-bottom: 10px; }
+
+.med-infos-patient-resumee {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.med-infos-patient-detail {
+  background-color: #f8fafc;
+  border-radius: 0 0 10px 10px;
+  padding: 20px 22px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.med-grille-infos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.med-info-label {
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 6px;
+}
+
+.med-info-valeur {
+  color: #1f2430;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+}

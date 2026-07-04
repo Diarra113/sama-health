@@ -1,0 +1,35 @@
+.layout-admin {
+  min-height: calc(100vh - 88px);
+  background-color: #f8fafc;
+}
+
+.admin-onglets {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0 36px;
+}
+
+.admin-onglet {
+  text-decoration: none;
+  color: #64748b;
+  font-size: 19px;
+  font-weight: 600;
+  padding: 20px 22px;
+  border-bottom: 3px solid transparent;
+}
+
+.admin-onglet:hover {
+  color: #1B5173;
+}
+
+.admin-onglet.active {
+  color: #1B5173;
+  border-bottom-color: #1B5173;
+}
+
+.admin-contenu {
+  padding: 36px;
+}

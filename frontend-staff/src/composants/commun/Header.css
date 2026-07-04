@@ -1,0 +1,81 @@
+.header-staff {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1B5173;
+  padding: 16px 36px;
+}
+
+.header-staff-logo {
+  height: 56px;
+}
+
+.header-staff-badge {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 12px 26px;
+}
+
+.header-staff-role {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.header-staff-detail {
+  color: #cbd5e1;
+  font-size: 18px;
+  position: relative;
+  padding-left: 16px;
+}
+
+.header-staff-detail::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #7fa8c4;
+}
+
+.header-staff-compte {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-staff-avatar {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-staff-nom-bloc {
+  text-align: left;
+}
+
+.header-staff-nom {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 2px;
+}
+
+.header-staff-deconnexion {
+  background: none;
+  border: none;
+  color: #fca5a5;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
