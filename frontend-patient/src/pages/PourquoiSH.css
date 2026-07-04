@@ -1,0 +1,259 @@
+.page-pourquoi-entete {
+  background-color: #1B5173;
+  padding: 80px 32px 100px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-pourquoi-vague {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 95px;
+  display: block;
+}
+
+.forme-decorative {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(2px);
+  animation: derive 10s ease-in-out infinite;
+}
+
+.forme-1 { width: 220px; height: 220px; top: -80px; left: -60px; background-color: #ffffff; opacity: 0.18; animation-duration: 12s; }
+.forme-2 { width: 160px; height: 160px; bottom: -60px; right: 5%; background-color: #ffffff; opacity: 0.18; animation-duration: 9s; animation-delay: 1s; }
+.forme-3 { width: 200px; height: 200px; top: 10%; left: 10%; background-color: #1B5173; opacity: 0.08; animation-duration: 11s; }
+.forme-4 { width: 180px; height: 180px; bottom: 5%; right: 15%; background-color: #1B5173; opacity: 0.08; animation-duration: 13s; animation-delay: 0.5s; }
+
+@keyframes derive {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(14px, 10px); }
+}
+
+.page-pourquoi-badge {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 18px;
+  border-radius: 30px;
+  margin: 0 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.page-pourquoi-label {
+  color: #93c5fd;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.page-pourquoi-titre {
+  color: #ffffff;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1.2;
+  max-width: 880px;
+  margin: 0 auto 22px;
+  position: relative;
+  z-index: 2;
+}
+
+.page-pourquoi-slogan {
+  color: #fde68a;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.rangee-fonctionnalite {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 70px auto;
+  padding: 0 32px;
+}
+
+.rangee-inversee {
+  flex-direction: row-reverse;
+}
+
+.rangee-texte {
+  flex: 1;
+}
+
+.rangee-icone {
+  color: #1B5173;
+  margin-bottom: 16px;
+}
+
+.rangee-texte h2 {
+  color: #1B5173;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 18px;
+}
+
+.rangee-texte p {
+  color: #334155;
+  font-size: 19px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.rangee-visuel {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 200px;
+  align-items: center;
+}
+
+.rangee-carte-flottante {
+  background-color: #ffffff;
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.12);
+  border-radius: 16px;
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  z-index: 2;
+}
+
+.rangee-carte-flottante span {
+  color: #64748b;
+  font-size: 15px;
+}
+
+.rangee-carte-flottante strong {
+  color: #1B5173;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.rangee-paiements {
+  font-size: 26px !important;
+}
+
+.rangee-temps {
+  color: #1B5173 !important;
+  font-weight: 600;
+}
+
+.rangee-carte-message {
+  font-size: 19px;
+}
+
+.page-pourquoi-grille {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 18px;
+  justify-content: center;
+  padding: 30px 32px 70px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.raison-carte {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 24px 18px;
+  flex: 1;
+  min-width: 0;
+}
+
+.raison-icone {
+  color: #1B5173;
+  margin-bottom: 14px;
+}
+
+.raison-titre {
+  color: #1B5173;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.raison-texte {
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .page-pourquoi-titre { font-size: 40px; }
+
+  .rangee-fonctionnalite {
+    gap: 32px;
+    margin: 50px auto;
+    padding: 0 24px;
+  }
+
+  .page-pourquoi-grille {
+    flex-wrap: wrap;
+    padding: 24px 24px 50px;
+  }
+
+  .raison-carte { min-width: calc(50% - 9px); flex: none; }
+}
+
+@media (max-width: 768px) {
+  .page-pourquoi-entete {
+    padding: 50px 20px 80px;
+  }
+
+  .page-pourquoi-titre {
+    font-size: 28px;
+    margin: 0 auto 16px;
+  }
+
+  .page-pourquoi-slogan { font-size: 18px; }
+  .page-pourquoi-label { font-size: 15px; }
+
+  .rangee-fonctionnalite {
+    flex-direction: column;
+    gap: 24px;
+    margin: 36px auto;
+    padding: 0 16px;
+  }
+
+  .rangee-inversee { flex-direction: column; }
+
+  .rangee-texte h2 { font-size: 22px; }
+  .rangee-texte p { font-size: 16px; }
+
+  .rangee-carte-flottante { padding: 22px 28px; }
+  .rangee-carte-flottante strong { font-size: 32px; }
+
+  .page-pourquoi-grille {
+    flex-direction: column;
+    padding: 16px 16px 40px;
+  }
+
+  .raison-carte { min-width: unset; }
+}
+
+@media (max-width: 480px) {
+  .page-pourquoi-entete { padding: 36px 14px 70px; }
+  .page-pourquoi-titre { font-size: 22px; }
+  .page-pourquoi-slogan { font-size: 16px; }
+
+  .rangee-texte h2 { font-size: 19px; }
+  .rangee-texte p { font-size: 15px; }
+}

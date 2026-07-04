@@ -1,0 +1,314 @@
+.tdb-page { padding: 0 0 40px; }
+
+/* Bannière */
+.tdb-banniere {
+  background: linear-gradient(135deg, #1B5173 0%, #2a7aad 100%);
+  border-radius: 20px;
+  padding: 44px 36px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  animation: apparitionDouce 0.6s ease;
+}
+
+@keyframes apparitionDouce {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.forme-decorative {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0.08;
+  animation: derive 11s ease-in-out infinite;
+}
+
+.forme-1 { width: 200px; height: 200px; top: -70px; right: 6%; animation-duration: 12s; }
+.forme-2 { width: 130px; height: 130px; bottom: -50px; left: 5%; animation-duration: 9s; animation-delay: 1s; }
+
+@keyframes derive {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(10px, 8px); }
+}
+
+.tdb-banniere-contenu {
+  position: relative;
+  z-index: 2;
+}
+
+.tdb-titre {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 14px;
+}
+
+.tdb-slogan {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tdb-coeur {
+  color: #60a5fa;
+  font-size: 20px;
+}
+
+.tdb-engagement {
+  color: #bfdbfe;
+  font-size: 15px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Cartes */
+.tdb-grille {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.tdb-carte {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  padding: 24px;
+  flex: 1;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tdb-carte-entete {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.tdb-carte-icone {
+  width: 42px; height: 42px;
+  background-color: #eef2f7;
+  color: #1B5173;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.tdb-carte-label {
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.tdb-carte-hopital {
+  color: #1B5173;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.tdb-carte-valeur {
+  color: #1f2430;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.tdb-carte-vide {
+  color: #94a3b8;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 0 12px;
+}
+
+.tdb-carte-conseil {
+  color: #64748b;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.tdb-carte-action {
+  color: #1B5173;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.tdb-carte-action:hover { text-decoration: underline; }
+
+.tdb-carte-btn {
+  background-color: #1B5173;
+  color: #ffffff;
+  border: none;
+  padding: 11px 18px;
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  margin-top: 4px;
+}
+
+.tdb-carte-btn:hover { background-color: #143F58; }
+
+.tdb-consulte {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #166534;
+}
+
+.tdb-consulte .tdb-carte-valeur { color: #166534; font-size: 16px; }
+
+/* Accès rapide */
+.tdb-acces { margin-bottom: 20px; }
+
+.tdb-acces-titre {
+  color: #1B5173;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 14px;
+}
+
+.tdb-acces-grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.tdb-acces-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+  padding: 20px 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #1f2430;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  text-align: center;
+}
+
+.tdb-acces-btn:hover {
+  background-color: #eef2f7;
+  transform: translateY(-2px);
+}
+
+.tdb-acces-icone {
+  width: 48px; height: 48px;
+  background-color: #eef2f7;
+  color: #1B5173;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .tdb-banniere { padding: 30px 20px; }
+  .tdb-titre { font-size: 24px; }
+  .tdb-slogan { font-size: 16px; }
+  .tdb-grille { flex-direction: column; }
+  .tdb-carte { min-width: unset; }
+}
+
+.tdb-banniere-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  background-color: rgba(255,255,255,0.15);
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.2s ease;
+}
+
+.tdb-banniere-btn:hover {
+  background-color: rgba(255,255,255,0.25);
+}
+
+@media (max-width: 768px) {
+  .tdb-page { padding: 0 0 30px; }
+
+  .tdb-banniere {
+    padding: 32px 22px;
+    border-radius: 14px;
+  }
+
+  .tdb-titre { font-size: 22px; }
+  .tdb-slogan { font-size: 15px; }
+  .tdb-engagement { font-size: 14px; }
+
+  .tdb-banniere-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px;
+  }
+
+  .tdb-grille {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .tdb-carte {
+    min-width: unset;
+    padding: 18px;
+  }
+
+  .tdb-carte-valeur { font-size: 16px; }
+
+  .tdb-acces-grille {
+    grid-template-columns: 1fr;
+  }
+
+  .tdb-acces-btn {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 14px 16px;
+    gap: 14px;
+  }
+
+  .tdb-acces-icone {
+    width: 40px; height: 40px;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .tdb-banniere {
+    padding: 24px 16px;
+    border-radius: 12px;
+  }
+
+  .tdb-titre { font-size: 20px; }
+  .tdb-slogan { font-size: 14px; }
+
+  .tdb-carte { padding: 14px; }
+  .tdb-carte-valeur { font-size: 15px; }
+  .tdb-carte-hopital { font-size: 14px; }
+}

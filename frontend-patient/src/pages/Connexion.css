@@ -1,0 +1,296 @@
+.page-connexion {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8fafc;
+  padding: 60px 20px;
+}
+
+.connexion-accueil {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 680px;
+}
+
+.connexion-carte {
+  background-color: #ffffff;
+  border-radius: 22px;
+  box-shadow: 0 18px 44px rgba(15, 23, 42, 0.12);
+  padding: 64px 56px;
+  text-align: center;
+}
+
+.connexion-logo {
+  height: 70px;
+  margin-bottom: 30px;
+}
+
+.connexion-carte h2 {
+  color: #1B5173;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+.connexion-carte p {
+  color: #64748b;
+  font-size: 19px;
+  line-height: 1.7;
+  margin: 0 0 34px;
+}
+
+.connexion-carte-secondaire {
+  padding: 40px 56px;
+}
+
+.connexion-carte-secondaire p {
+  margin: 0 0 18px;
+  font-weight: 600;
+  font-size: 19px;
+  color: #334155;
+}
+
+.connexion-btn-principal {
+  width: 100%;
+  background-color: #1B5173;
+  color: #ffffff;
+  border: none;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 19px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.connexion-btn-principal:hover {
+  background-color: #143F58;
+}
+
+.connexion-btn-secondaire {
+  width: 100%;
+  background-color: #ffffff;
+  color: #1B5173;
+  border: 2px solid #1B5173;
+  padding: 18px;
+  border-radius: 12px;
+  font-size: 19px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.connexion-btn-secondaire:hover {
+  background-color: #1B5173;
+  color: #ffffff;
+}
+
+.connexion-carte-formulaire {
+  width: 100%;
+  max-width: 640px;
+  text-align: left;
+  padding: 60px 56px;
+}
+
+.connexion-carte-formulaire .connexion-logo {
+  display: block;
+  margin: 0 auto 28px;
+}
+
+.connexion-carte-formulaire h2 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.connexion-retour {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 26px;
+}
+
+.connexion-barre-progression {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 34px;
+}
+
+.segment {
+  flex: 1;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #e2e8f0;
+  transition: background-color 0.3s ease;
+}
+
+.segment.actif {
+  background-color: #1B5173;
+}
+
+.connexion-etape-label {
+  color: #64748b;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 32px;
+}
+
+.connexion-label {
+  display: block;
+  color: #1f2430;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.connexion-input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 18px 20px;
+  font-size: 18px;
+  margin-bottom: 22px;
+  outline: none;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.connexion-input:focus {
+  border-color: #1B5173;
+}
+
+.connexion-aide {
+  color: #64748b;
+  font-size: 16px;
+  margin: -8px 0 22px;
+  line-height: 1.6;
+}
+
+.connexion-erreur {
+  color: #b45309;
+  background-color: #fef3c7;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 15px;
+  font-weight: 600;
+  margin: -4px 0 20px;
+}
+
+.connexion-erreur-champ {
+  color: #b45309;
+  background-color: #fef3c7;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: -14px 0 18px;
+}
+
+.connexion-lien-secondaire {
+  display: block;
+  text-align: center;
+  color: #1B5173;
+  font-size: 16px;
+  margin-top: 24px;
+  text-decoration: none;
+}
+
+.connexion-lien-secondaire:hover {
+  text-decoration: underline;
+}
+
+.connexion-logo {
+  cursor: pointer;
+}
+
+.connexion-succes {
+  text-align: center;
+}
+
+.connexion-succes-icone {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+.connexion-succes-icone {
+  color: #1B5173;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .page-connexion {
+    padding: 32px 16px;
+    align-items: flex-start;
+  }
+
+  .connexion-carte {
+    padding: 40px 24px;
+    border-radius: 16px;
+  }
+
+  .connexion-carte h2 {
+    font-size: 26px;
+  }
+
+  .connexion-carte p {
+    font-size: 16px;
+  }
+
+  .connexion-carte-secondaire {
+    padding: 28px 24px;
+  }
+
+  .connexion-carte-formulaire {
+    padding: 40px 24px;
+  }
+
+  .connexion-carte-formulaire h2 {
+    font-size: 24px;
+  }
+
+  .connexion-btn-principal,
+  .connexion-btn-secondaire {
+    padding: 16px;
+    font-size: 17px;
+  }
+
+  .connexion-input {
+    padding: 14px 16px;
+    font-size: 16px;
+  }
+
+  .connexion-logo {
+    height: 56px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-connexion {
+    padding: 20px 12px;
+  }
+
+  .connexion-carte {
+    padding: 32px 16px;
+  }
+
+  .connexion-carte h2 {
+    font-size: 22px;
+  }
+
+  .connexion-carte-formulaire {
+    padding: 32px 16px;
+  }
+
+  .connexion-btn-principal,
+  .connexion-btn-secondaire {
+    padding: 14px;
+    font-size: 16px;
+  }
+}

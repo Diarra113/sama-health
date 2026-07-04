@@ -1,0 +1,169 @@
+.carte-hopital {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  width: 380px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: height 0.4s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carte-hopital:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.14);
+}
+
+.carte-hopital-etendue {
+  height: auto;
+}
+
+.carte-hopital-photo-wrapper {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  flex-shrink: 0;
+}
+
+.carte-hopital-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carte-hopital-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background-color: #dc2626;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 20px;
+}
+
+.carte-hopital-contenu {
+  flex: 1;
+  padding: 22px 24px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.carte-hopital-nom {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1B5173;
+  margin: 0 0 12px;
+  line-height: 1.25;
+}
+
+.carte-hopital-adresse {
+  font-size: 17px;
+  color: #334155;
+  margin: 0 0 8px;
+}
+
+.carte-hopital-telephone {
+  font-size: 17px;
+  color: #334155;
+  margin: 0 0 16px;
+}
+
+.carte-hopital-specialites {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.carte-hopital-tag {
+  background-color: #f1f5f9;
+  color: #1B5173;
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.carte-hopital-voir-plus {
+  background: none;
+  border: none;
+  color: #1B5173;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 0;
+  text-align: left;
+}
+
+.carte-hopital-btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #1B5173;
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 22px 22px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.carte-hopital-btn:hover { background-color: #143F58; }
+.carte-hopital-btn:active { transform: scale(0.97); }
+
+.carte-hopital-adresse,
+.carte-hopital-telephone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1B5173;
+}
+
+@media (max-width: 1024px) {
+  .carte-hopital {
+    width: calc(50% - 12px) !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .carte-hopital {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .carte-hopital-photo-wrapper { height: 160px; }
+  .carte-hopital-nom { font-size: 19px; }
+
+  .carte-hopital-adresse,
+  .carte-hopital-telephone { font-size: 15px; }
+
+  .carte-hopital-btn {
+    margin: 0 16px 16px;
+    padding: 13px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carte-hopital-photo-wrapper { height: 140px; }
+
+  .carte-hopital-contenu { padding: 16px 16px 10px; }
+
+  .carte-hopital-nom { font-size: 17px; }
+
+  .carte-hopital-tag {
+    font-size: 13px;
+    padding: 5px 12px;
+  }
+
+  .carte-hopital-btn {
+    margin: 0 12px 12px;
+    font-size: 14px;
+  }
+}

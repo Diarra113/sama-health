@@ -28,6 +28,14 @@
   color: #61dafb;
 }
 
+.accueil-resultats-compteur {
+  text-align: center;
+  color: #1B5173;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 28px 0 -10px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

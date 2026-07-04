@@ -1,0 +1,416 @@
+.hd-chargement {
+  text-align: center;
+  padding: 60px;
+  color: #64748b;
+}
+
+.hd-hero {
+  position: relative;
+  height: 460px;
+  background-image: var(--hd-image);
+  background-size: cover;
+  background-position: center;
+}
+
+.hd-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.1));
+}
+
+.hd-hero-contenu {
+  position: absolute;
+  bottom: 36px;
+  left: 40px;
+  z-index: 2;
+}
+
+.hd-badge-urgence {
+  display: inline-block;
+  background-color: #dc2626;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.hd-hero-nom {
+  color: #ffffff;
+  font-size: 44px;
+  font-weight: 800;
+  margin: 0 0 10px;
+}
+
+
+.hd-badge-public {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 20px;
+}
+
+.hd-corps {
+  display: flex;
+  gap: 28px;
+  max-width: 1200px;
+  margin: -40px auto 0;
+  padding: 0 32px 50px;
+  position: relative;
+  z-index: 3;
+  align-items: flex-start;
+}
+
+.hd-colonne-principale {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hd-carte {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  padding: 28px 30px;
+}
+
+.hd-carte-entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.hd-carte-entete h3 {
+  color: #1B5173;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hd-voir-plus {
+  background: none;
+  border: none;
+  color: #1B5173;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hd-voir-plus:hover {
+  text-decoration: underline;
+}
+
+.hd-ligne {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #334155;
+  font-size: 17px;
+  margin: 0 0 10px;
+}
+
+.hd-texte {
+  color: #334155;
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.hd-lien-maps {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #1B5173;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 14px;
+}
+
+.hd-lien-maps:hover {
+  text-decoration: underline;
+}
+
+.hd-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hd-tag {
+  background-color: #f1f5f9;
+  color: #1B5173;
+  font-size: 15px;
+  padding: 8px 18px;
+  border-radius: 20px;
+}
+
+.hd-sidebar {
+  flex: 0 0 420px;
+  width: 420px;
+  min-width: 420px;
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+}
+
+
+.hd-sidebar-carte {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.1);
+  padding: 28px 26px;
+}
+
+.hd-sidebar-nom {
+  color: #1f2430;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.hd-sidebar-nom {
+  color: #1f2430;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.hd-sidebar-adresse {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: #64748b;
+  font-size: 15px;
+  margin: 18px 0 24px;
+  line-height: 1.5;
+}
+
+.hd-btn-principal {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #1B5173;
+  color: #ffffff;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.hd-btn-principal:hover {
+  background-color: #143F58;
+}
+
+.hd-btn-secondaire {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 2px solid #1B5173;
+  color: #1B5173;
+  padding: 13px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hd-btn-secondaire:hover {
+  background-color: #f1f5f9;
+}
+
+.hd-message-attente {
+  color: #1B5173;
+  background-color: #eef2f7;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-top: 14px;
+  line-height: 1.5;
+}
+
+.hd-sidebar-titre-ligne {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #1B5173;
+  margin-bottom: 12px;
+}
+
+.hd-sidebar-titre-ligne .hd-sidebar-nom {
+  margin: 0;
+}
+
+.hd-sidebar-carte .hd-badge-public.hd-badge-sidebar {
+  background-color: #eef2f7;
+  border-color: #cbd5e1;
+  color: #1B5173;
+  margin-bottom: 18px;
+}
+
+.hd-badge-urgence {
+  margin-top: 8px;
+}
+
+.hd-specialite-bloc {
+  margin-bottom: 22px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.hd-specialite-bloc:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.hd-specialite-nom {
+  color: #1B5173;
+  font-size: 19px;
+  font-weight: 700;
+  margin: 0 0 14px;
+}
+
+.hd-medecins-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hd-medecin-carte {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #f8fafc;
+  border-radius: 10px;
+  padding: 14px 18px;
+}
+
+.hd-medecin-avatar {
+  width: 50px; height: 50px;
+  background-color: #1B5173;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.hd-medecin-nom {
+  color: #1f2430;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.hd-medecin-fonction {
+  color: #64748b;
+  font-size: 15px;
+  margin: 0;
+}
+
+.hd-medecin-vide {
+  color: #94a3b8;
+  font-size: 15px;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .hd-corps {
+    flex-direction: column;
+    padding: 0 24px 40px;
+    margin: -20px auto 0;
+  }
+
+  .hd-sidebar {
+    flex: none;
+    width: 100%;
+    min-width: unset;
+    position: static;
+  }
+
+  .hd-sidebar-carte {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .hd-sidebar-titre-ligne {
+    grid-column: 1 / -1;
+  }
+
+  .hd-sidebar-carte .hd-badge-public {
+    grid-column: 1 / -1;
+  }
+
+  .hd-sidebar-adresse {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hd-hero { height: 320px; }
+
+  .hd-hero-nom {
+    font-size: 28px;
+  }
+
+  .hd-hero-contenu {
+    bottom: 24px;
+    left: 20px;
+  }
+
+  .hd-corps {
+    padding: 0 16px 32px;
+  }
+
+  .hd-carte {
+    padding: 20px;
+  }
+
+  .hd-carte-entete h3 {
+    font-size: 18px;
+  }
+
+  .hd-sidebar-carte {
+    grid-template-columns: 1fr;
+  }
+
+  .hd-btn-principal,
+  .hd-btn-secondaire {
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hd-hero { height: 260px; }
+
+  .hd-hero-nom { font-size: 22px; }
+
+  .hd-ligne { font-size: 15px; }
+  .hd-texte { font-size: 15px; }
+
+  .hd-medecin-nom { font-size: 16px; }
+  .hd-medecin-fonction { font-size: 14px; }
+  .hd-medecin-avatar { width: 42px; height: 42px; font-size: 15px; }
+}

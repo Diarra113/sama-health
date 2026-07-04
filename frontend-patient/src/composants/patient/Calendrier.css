@@ -1,0 +1,132 @@
+.calendrier {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  padding: 24px;
+  box-sizing: border-box;
+  margin-bottom: 24px;
+}
+
+.calendrier-entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.calendrier-titre {
+  color: #1B5173;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.calendrier-nav {
+  background: none;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #1B5173;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendrier-nav:hover {
+  background-color: #eef2f7;
+}
+
+.calendrier-jours-semaine {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.calendrier-jour-label {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #64748b;
+  padding: 6px 0;
+}
+
+.calendrier-grille {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.calendrier-case {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #f8fafc;
+  color: #1f2430;
+  transition: all 0.15s ease;
+  width: 100%;
+}
+
+.calendrier-case:hover:not(:disabled) {
+  background-color: #1B5173;
+  color: #ffffff;
+}
+
+.calendrier-case-selectionnee {
+  background-color: #1B5173 !important;
+  color: #ffffff !important;
+}
+
+.calendrier-case-indisponible {
+  background-color: #f1f5f9 !important;
+  color: #cbd5e1 !important;
+  cursor: not-allowed !important;
+}
+
+.calendrier-case-saturee {
+  background-color: #fee2e2 !important;
+  color: #991b1b !important;
+  cursor: not-allowed !important;
+  font-weight: 700;
+}
+
+.calendrier-case-vide {
+  background: none;
+  pointer-events: none;
+}
+
+.calendrier-legende {
+  display: flex;
+  gap: 20px;
+  margin-top: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.leg-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.leg-couleur {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.leg-saturee { background-color: #fee2e2; border: 1px solid #fca5a5; }
+.leg-ferme { background-color: #f1f5f9; border: 1px solid #e2e8f0; }

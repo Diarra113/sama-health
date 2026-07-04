@@ -1,0 +1,335 @@
+.at-chargement {
+  text-align: center;
+  padding: 60px;
+  color: #64748b;
+}
+
+.at-page {
+  background-color: #f8fafc;
+  padding: 50px 32px 70px;
+}
+
+.at-corps {
+  display: flex;
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.at-colonne-principale {
+  flex: 2;
+}
+
+.at-titre-page {
+  color: #1B5173;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.at-soustitre-page {
+  color: #64748b;
+  font-size: 16px;
+  margin: 0 0 24px;
+}
+
+.at-barre-progression {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.at-segment {
+  flex: 1;
+  height: 6px;
+  border-radius: 4px;
+  background-color: #e2e8f0;
+}
+
+.at-segment.actif {
+  background-color: #1B5173;
+}
+
+.at-carte {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  padding: 32px 36px;
+}
+
+.at-carte h2 {
+  color: #1B5173;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 18px;
+}
+
+.at-retour {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 18px;
+}
+
+.at-aide {
+  color: #64748b;
+  font-size: 15px;
+  margin: 0 0 20px;
+}
+
+.at-liste-specialites {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.at-specialite-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 16px 20px;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.at-specialite-btn:hover {
+  border-color: #1B5173;
+  background-color: #eef2f7;
+}
+
+.at-specialite-nom {
+  color: #1f2430;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.at-specialite-tarif {
+  color: #1B5173;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.at-erreur {
+  color: #b45309;
+  background-color: #fef3c7;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.at-choix-paiement {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.at-paiement-btn {
+  flex: 1;
+  background-color: #ffffff;
+  border: 2px solid #cbd5e1;
+  color: #475569;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.at-paiement-actif {
+  border-color: #1B5173;
+  background-color: #eef2f7;
+  color: #1B5173;
+}
+
+.at-montant {
+  font-size: 16px;
+  color: #1f2430;
+  margin-bottom: 20px;
+}
+
+.at-btn-principal {
+  width: 100%;
+  background-color: #1B5173;
+  color: #ffffff;
+  border: none;
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.at-btn-principal:hover {
+  background-color: #143F58;
+}
+
+.at-btn-secondaire {
+  width: 100%;
+  background-color: #ffffff;
+  border: 2px solid #1B5173;
+  color: #1B5173;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.at-succes {
+  text-align: center;
+}
+
+.at-succes-icone {
+  color: #16a34a;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.at-code {
+  color: #dc2626;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.at-sidebar {
+  flex: 1;
+}
+
+.at-sidebar-carte {
+  position: sticky;
+  top: 100px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.1);
+  padding: 30px;
+}
+
+.at-sidebar-titre-ligne {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #1B5173;
+  margin-bottom: 12px;
+}
+
+.at-sidebar-titre-ligne h3 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.at-badge-public {
+  display: inline-block;
+  background-color: #eef2f7;
+  border: 1px solid #cbd5e1;
+  color: #1B5173;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 20px;
+}
+
+.at-recap {
+  margin-top: 22px;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 18px;
+}
+
+.at-recap-label {
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.at-recap-valeur {
+  color: #1f2430;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+
+@media (max-width: 768px) {
+  .at-page {
+    padding: 24px 14px 40px;
+  }
+
+  .at-corps {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .at-sidebar {
+    order: -1;
+  }
+
+  .at-sidebar-carte {
+    position: static;
+    padding: 20px;
+  }
+
+  .at-carte {
+    padding: 22px 18px;
+  }
+
+  .at-carte h2 {
+    font-size: 19px;
+  }
+
+  .at-titre-page {
+    font-size: 22px;
+  }
+
+  .at-specialite-btn {
+    padding: 13px 16px;
+  }
+
+  .at-specialite-nom {
+    font-size: 15px;
+  }
+
+  .at-choix-paiement {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .at-btn-principal,
+  .at-btn-secondaire {
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .at-page {
+    padding: 16px 10px 32px;
+  }
+
+  .at-carte {
+    padding: 16px 14px;
+  }
+
+  .at-carte h2 {
+    font-size: 17px;
+  }
+
+  .at-titre-page {
+    font-size: 19px;
+  }
+
+  .at-btn-principal,
+  .at-btn-secondaire {
+    font-size: 14px;
+    padding: 13px;
+  }
+}

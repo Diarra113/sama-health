@@ -1,0 +1,16 @@
+.entete-dashboard {
+  margin-bottom: 32px;
+}
+
+.entete-dashboard-titre {
+  color: #1B5173;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.entete-dashboard-soustitre {
+  color: #64748b;
+  font-size: 17px;
+  margin: 0;
+}

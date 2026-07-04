@@ -1,0 +1,352 @@
+.page-apropos-entete {
+  background-color: #1B5173;
+  padding: 80px 32px 110px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-apropos-vague {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 95px;
+  display: block;
+}
+
+.forme-decorative {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(2px);
+  animation: derive 11s ease-in-out infinite;
+}
+
+.forme-1 { width: 220px; height: 220px; top: -80px; left: -60px; background-color: #ffffff; opacity: 0.18; animation-duration: 12s; }
+.forme-2 { width: 160px; height: 160px; bottom: -60px; right: 5%; background-color: #ffffff; opacity: 0.18; animation-duration: 9s; animation-delay: 1s; }
+.forme-3 { width: 200px; height: 200px; top: 10%; left: 8%; background-color: #1B5173; opacity: 0.07; animation-duration: 11s; }
+.forme-4 { width: 180px; height: 180px; bottom: 8%; right: 10%; background-color: #1B5173; opacity: 0.07; animation-duration: 13s; animation-delay: 0.5s; }
+
+@keyframes derive {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(14px, 10px); }
+}
+
+.page-apropos-label {
+  color: #93c5fd;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 18px;
+  position: relative;
+  z-index: 2;
+}
+
+.page-apropos-titre {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.25;
+  max-width: 850px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.page-apropos-histoire {
+  position: relative;
+  overflow: hidden;
+  max-width: 760px;
+  margin: 70px auto;
+  padding: 0 32px;
+  text-align: center;
+}
+
+.page-apropos-histoire h2 {
+  color: #1B5173;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 22px;
+  position: relative;
+  z-index: 2;
+}
+
+.page-apropos-histoire p {
+  color: #334155;
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.page-apropos-encadrement {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto 70px;
+  padding: 30px 32px;
+}
+
+.encadrement-carte {
+  background-color: #f8fafc;
+  border-left: 4px solid #1B5173;
+  border-radius: 10px;
+  padding: 26px 28px;
+  flex: 1;
+  min-width: 260px;
+  position: relative;
+  z-index: 2;
+}
+
+.encadrement-carte h3 {
+  color: #1B5173;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.encadrement-carte p {
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.page-apropos-equipe {
+  position: relative;
+  overflow: hidden;
+  background-color: #f8fafc;
+  padding: 90px 32px 110px;
+  text-align: center;
+}
+
+.equipe-titre {
+  color: #1B5173;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.equipe-grille {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.equipe-carte {
+  background-color: #ffffff;
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.1);
+  border-radius: 24px;
+  padding: 50px 40px;
+  width: 320px;
+  transition: transform 0.25s ease;
+}
+
+.equipe-carte:hover {
+  transform: translateY(-6px);
+}
+
+.equipe-carte-haut {
+  margin-top: -25px;
+}
+
+.equipe-carte-bas {
+  margin-top: 25px;
+}
+
+.equipe-avatar {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 26px;
+  background-color: #1B5173;
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 58% 42% 65% 35% / 45% 55% 45% 55%;
+}
+
+.equipe-photo {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 26px;
+  object-fit: cover;
+  display: block;
+  border-radius: 58% 42% 65% 35% / 45% 55% 45% 55%;
+}
+
+.equipe-nom {
+  color: #1B5173;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.equipe-role {
+  color: #64748b;
+  font-size: 17px;
+  margin: 0;
+}
+
+.page-apropos-valeurs {
+  position: relative;
+  overflow: hidden;
+  padding: 90px 32px;
+  text-align: center;
+}
+
+.valeurs-titre {
+  color: #1B5173;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.valeurs-grille {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1150px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.valeur-carte {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 32px 24px;
+  flex: 1;
+  min-width: 0;
+}
+
+.valeur-icone {
+  color: #1B5173;
+  margin-bottom: 16px;
+}
+
+.valeur-titre {
+  color: #1B5173;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.valeur-texte {
+  color: #475569;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .page-apropos-titre { font-size: 36px; }
+
+  .valeurs-grille {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .valeur-carte { min-width: calc(50% - 8px); flex: none; }
+
+  .equipe-grille { gap: 40px; }
+}
+
+@media (max-width: 768px) {
+  .page-apropos-entete {
+    padding: 50px 20px 90px;
+  }
+
+  .page-apropos-titre {
+    font-size: 26px;
+  }
+
+  .page-apropos-label { font-size: 14px; }
+
+  .page-apropos-histoire {
+    margin: 40px auto;
+    padding: 0 16px;
+  }
+
+  .page-apropos-histoire h2 { font-size: 24px; }
+  .page-apropos-histoire p { font-size: 17px; }
+
+  .page-apropos-encadrement {
+    padding: 16px 16px;
+    margin: 0 auto 40px;
+  }
+
+  .encadrement-carte { min-width: unset; }
+
+  .page-apropos-equipe {
+    padding: 50px 16px 70px;
+  }
+
+  .equipe-titre { font-size: 24px; margin: 0 0 36px; }
+
+  .equipe-grille {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .equipe-carte {
+    width: 100%;
+    max-width: 320px;
+    padding: 36px 28px;
+    margin-top: 0 !important;
+  }
+
+  .equipe-avatar {
+    width: 110px;
+    height: 110px;
+    font-size: 30px;
+  }
+
+  .equipe-nom { font-size: 20px; }
+
+  .page-apropos-valeurs {
+    padding: 50px 16px;
+  }
+
+  .valeurs-titre { font-size: 24px; margin: 0 0 32px; }
+
+  .valeurs-grille {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .valeur-carte { min-width: unset; padding: 24px 18px; }
+  .valeur-titre { font-size: 18px; }
+  .valeur-texte { font-size: 15px; }
+}
+
+@media (max-width: 480px) {
+  .page-apropos-entete { padding: 36px 14px 80px; }
+  .page-apropos-titre { font-size: 22px; }
+
+  .page-apropos-histoire p { font-size: 15px; }
+
+  .equipe-carte { padding: 28px 20px; }
+  .equipe-avatar { width: 90px; height: 90px; font-size: 26px; }
+  .equipe-nom { font-size: 18px; }
+}

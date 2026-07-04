@@ -1,0 +1,51 @@
+.liste-hopitaux {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 56px 32px 24px;
+}
+
+.liste-hopitaux-voir-tout {
+  text-align: center;
+  padding-bottom: 56px;
+}
+
+.liste-hopitaux-voir-tout-btn {
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #1B5173;
+  color: #1B5173;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 12px 28px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.liste-hopitaux-voir-tout-btn:hover {
+  background-color: #1B5173;
+  color: #ffffff;
+}
+
+.liste-hopitaux-vide {
+  text-align: center;
+  color: #64748b;
+  font-size: 16px;
+  padding: 40px 0;
+}
+
+@media (max-width: 1024px) {
+  .liste-hopitaux {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 24px 20px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .liste-hopitaux {
+    grid-template-columns: 1fr;
+    padding: 32px 16px 16px;
+    gap: 16px;
+  }
+}

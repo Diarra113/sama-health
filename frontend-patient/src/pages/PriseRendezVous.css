@@ -1,0 +1,211 @@
+.prv-page {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  padding: 32px 20px;
+}
+
+.prv-corps-plein {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.prv-chargement { color: #64748b; font-size: 16px; text-align: center; padding: 40px; }
+
+.prv-titre-page { color: #1B5173; font-size: 26px; font-weight: 700; margin: 0 0 6px; }
+.prv-soustitre-page { color: #64748b; font-size: 17px; margin: 0 0 24px; }
+
+.prv-barre-progression {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.prv-segment {
+  flex: 1;
+  height: 5px;
+  background-color: #e2e8f0;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.prv-segment.actif { background-color: #1B5173; }
+
+.prv-carte {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  padding: 32px;
+}
+
+.prv-carte h2 { color: #1B5173; font-size: 22px; font-weight: 700; margin: 0 0 20px; }
+
+.prv-retour {
+  background: none; border: none; color: #1B5173;
+  font-size: 15px; font-weight: 600; cursor: pointer;
+  padding: 0; margin-bottom: 18px;
+}
+
+.prv-liste-specialites { display: flex; flex-direction: column; gap: 12px; }
+
+.prv-specialite-btn {
+  display: flex; justify-content: space-between; align-items: center;
+  background-color: #f8fafc; border: 2px solid #e2e8f0;
+  border-radius: 10px; padding: 16px 20px; cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.prv-specialite-btn:hover { border-color: #1B5173; background-color: #eef2f7; }
+
+.prv-specialite-nom { color: #1f2430; font-size: 17px; font-weight: 600; }
+.prv-specialite-tarif { color: #1B5173; font-size: 15px; font-weight: 700; }
+
+.prv-creneaux-zone { margin-top: 24px; }
+
+.prv-aide { color: #64748b; font-size: 15px; margin: 0 0 20px; }
+
+.prv-recap-final {
+  background-color: #f8fafc;
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin-bottom: 18px;
+}
+
+.prv-recap-final p { color: #334155; font-size: 16px; margin: 0 0 10px; }
+.prv-recap-final p:last-child { margin: 0; }
+
+.prv-info-paiement {
+  background-color: #fef3c7;
+  color: #92400e;
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.prv-erreur {
+  color: #b45309;
+  background-color: #fef3c7;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.prv-btn-principal {
+  width: 100%;
+  background-color: #1B5173;
+  color: #ffffff;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.prv-btn-principal:disabled { opacity: 0.6; cursor: not-allowed; }
+.prv-btn-principal:hover:not(:disabled) { background-color: #143F58; }
+
+.prv-succes { text-align: center; }
+.prv-succes h2 { color: #166534; font-size: 24px; font-weight: 700; margin: 16px 0 12px; }
+.prv-succes p { color: #334155; font-size: 16px; margin: 0 0 16px; line-height: 1.6; }
+
+.prv-succes-icone {
+  width: 80px; height: 80px;
+  background-color: #dcfce7;
+  color: #166534;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 8px;
+}
+
+.prv-btn-secondaire {
+  background-color: #ffffff;
+  border: 2px solid #1B5173;
+  color: #1B5173;
+  padding: 13px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .prv-page {
+    padding: 20px 14px;
+  }
+
+  .prv-carte {
+    padding: 22px 18px;
+    border-radius: 12px;
+  }
+
+  .prv-carte h2 {
+    font-size: 19px;
+  }
+
+  .prv-titre-page {
+    font-size: 22px;
+  }
+
+  .prv-specialite-btn {
+    padding: 14px 16px;
+  }
+
+  .prv-specialite-nom {
+    font-size: 15px;
+  }
+
+  .prv-specialite-tarif {
+    font-size: 14px;
+  }
+
+  .prv-recap-final {
+    padding: 14px 16px;
+  }
+
+  .prv-recap-final p {
+    font-size: 15px;
+  }
+
+  .prv-btn-principal {
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .prv-succes h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .prv-page {
+    padding: 14px 10px;
+  }
+
+  .prv-carte {
+    padding: 18px 14px;
+  }
+
+  .prv-carte h2 {
+    font-size: 17px;
+  }
+
+  .prv-titre-page {
+    font-size: 19px;
+  }
+
+  .prv-btn-principal {
+    font-size: 15px;
+    padding: 13px;
+  }
+
+  .prv-succes-icone {
+    width: 64px;
+    height: 64px;
+  }
+}

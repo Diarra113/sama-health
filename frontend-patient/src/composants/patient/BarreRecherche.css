@@ -1,0 +1,121 @@
+.barre-recherche {
+  background-color: #ffffff;
+  border-radius: 70px;
+  box-shadow: 0 16px 44px rgba(15, 23, 42, 0.2);
+  display: flex;
+  align-items: center;
+  max-width: 980px;
+  margin: -46px auto 0;
+  position: relative;
+  z-index: 10;
+  padding: 12px;
+}
+
+.barre-recherche-champ {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 18px 30px;
+  gap: 14px;
+}
+
+.barre-recherche-icone {
+  display: flex;
+  align-items: center;
+  color: #1B5173;
+}
+
+.barre-recherche-input {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  flex: 1;
+  color: #1f2430;
+}
+
+.barre-recherche-separateur {
+  width: 1px;
+  height: 48px;
+  background-color: #e2e8f0;
+}
+
+.barre-recherche-btn {
+  background-color: #1B5173;
+  color: #ffffff;
+  border: none;
+  padding: 22px 44px;
+  border-radius: 60px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease;
+}
+
+.barre-recherche-btn:hover {
+  background-color: #143F58;
+}
+
+.barre-recherche-conteneur {
+  position: relative;
+}
+
+.barre-recherche-message {
+  text-align: center;
+  color: #dc2626;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 12px 0 0;
+}
+
+@media (max-width: 768px) {
+  .barre-recherche {
+    flex-direction: column;
+    border-radius: 20px;
+    margin: -30px 16px 0;
+    padding: 16px;
+    gap: 8px;
+    box-sizing: border-box;
+    width: calc(100% - 32px);
+  }
+
+  .barre-recherche-champ {
+    width: 100%;
+    padding: 10px 14px;
+    box-sizing: border-box;
+  }
+
+  .barre-recherche-separateur {
+    width: 100%;
+    height: 1px;
+  }
+
+  .barre-recherche-input {
+    font-size: 15px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .barre-recherche-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .barre-recherche {
+    margin: -24px 12px 0;
+    padding: 12px;
+  }
+
+  .barre-recherche-champ {
+    padding: 10px 12px;
+  }
+
+  .barre-recherche-input {
+    font-size: 15px;
+  }
+}

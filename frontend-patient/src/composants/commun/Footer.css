@@ -1,0 +1,32 @@
+.footer {
+  background-color: #1B5173;
+  padding: 32px;
+  text-align: center;
+}
+
+.footer-legal {
+  color: #cbd5e1;
+  font-size: 12px;
+  max-width: 500px;
+  margin: 0 auto 12px;
+}
+
+.footer-copyright {
+  color: #ffffff;
+  font-size: 13px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 24px 20px;
+  }
+
+  .footer-legal { font-size: 11px; }
+  .footer-copyright { font-size: 12px; }
+}
+
+@media (max-width: 480px) {
+  .footer { padding: 20px 14px; }
+  .footer-legal { font-size: 10px; }
+}

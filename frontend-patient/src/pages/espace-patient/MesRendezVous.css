@@ -1,0 +1,269 @@
+.mrv-banniere {
+  background-color: #1B5173;
+  border-radius: 20px;
+  padding: 50px 40px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 28px;
+  animation: mrvApparition 0.6s ease;
+}
+
+@keyframes mrvApparition {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.mrv-forme {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(2px);
+  background-color: #ffffff;
+  opacity: 0.15;
+  animation: mrvDerive 11s ease-in-out infinite;
+}
+
+.mrv-forme-1 { width: 200px; height: 200px; top: -70px; right: 10%; animation-duration: 12s; }
+.mrv-forme-2 { width: 140px; height: 140px; bottom: -50px; left: 8%; animation-duration: 9s; animation-delay: 1s; }
+
+@keyframes mrvDerive {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(12px, 8px); }
+}
+
+.mrv-titre {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.mrv-soustitre {
+  color: #e2e8f0;
+  font-size: 17px;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.mrv-message {
+  color: #64748b;
+  font-size: 16px;
+  padding: 20px 0;
+}
+
+.mrv-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mrv-carte {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  padding: 24px 28px;
+}
+
+.mrv-carte-entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.mrv-carte-entete h3 {
+  color: #1B5173;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.mrv-statut {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+.mrv-statut-confirme {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.mrv-statut-attente {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.mrv-statut-rejete {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.mrv-ligne {
+  color: #334155;
+  font-size: 17px;
+  margin: 0 0 10px;
+}
+
+.mrv-btn-telecharger {
+  margin-top: 12px;
+  background-color: #1B5173;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mrv-btn-telecharger:hover {
+  background-color: #143F58;
+}
+
+.mrv-section-titre {
+  color: #1B5173;
+  font-size: 19px;
+  font-weight: 700;
+  margin: 28px 0 14px;
+}
+
+.mrv-mention-passee {
+  color: #94a3b8;
+  font-size: 14px;
+  font-style: italic;
+  margin: 8px 0;
+}
+
+.mrv-paiement-zone {
+  margin-top: 14px;
+  padding: 16px;
+  background-color: #f0fdf4;
+  border-radius: 10px;
+  border: 1px solid #bbf7d0;
+}
+
+.mrv-paiement-msg {
+  color: #166534;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 14px;
+}
+
+.mrv-choix-paiement {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.mrv-paiement-btn {
+  flex: 1;
+  background-color: #ffffff;
+  border: 2px solid #cbd5e1;
+  color: #475569;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mrv-paiement-actif {
+  border-color: #1B5173;
+  background-color: #eef2f7;
+  color: #1B5173;
+}
+
+.mrv-notif {
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+.mrv-notif-attente { background-color: #fef3c7; color: #92400e; }
+.mrv-notif-confirme { background-color: #dcfce7; color: #166534; }
+.mrv-notif-rejete { background-color: #fee2e2; color: #991b1b; }
+
+.mrv-paiement-zone { margin-top: 8px; }
+
+.mrv-choix-paiement { display: flex; gap: 10px; margin-bottom: 12px; }
+
+.mrv-paiement-btn {
+  flex: 1;
+  background-color: #ffffff;
+  border: 2px solid #cbd5e1;
+  color: #475569;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mrv-paiement-actif {
+  border-color: #1B5173;
+  background-color: #eef2f7;
+  color: #1B5173;
+}
+
+@media (max-width: 768px) {
+  .mrv-banniere {
+    padding: 32px 22px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+  }
+
+  .mrv-titre { font-size: 24px; }
+  .mrv-soustitre { font-size: 15px; }
+
+  .mrv-carte {
+    padding: 18px 16px;
+    border-radius: 12px;
+  }
+
+  .mrv-carte-entete {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .mrv-carte-entete h3 { font-size: 18px; }
+
+  .mrv-statut { font-size: 13px; padding: 5px 12px; }
+
+  .mrv-ligne { font-size: 15px; }
+
+  .mrv-choix-paiement { flex-direction: column; gap: 8px; }
+
+  .mrv-paiement-btn { padding: 12px; font-size: 15px; }
+
+  .mrv-btn-telecharger {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .mrv-banniere {
+    padding: 24px 16px;
+    border-radius: 12px;
+  }
+
+  .mrv-titre { font-size: 20px; }
+
+  .mrv-carte { padding: 14px 12px; }
+
+  .mrv-carte-entete h3 { font-size: 16px; }
+
+  .mrv-ligne { font-size: 14px; }
+
+  .mrv-notif { font-size: 13px; padding: 10px 12px; }
+}
