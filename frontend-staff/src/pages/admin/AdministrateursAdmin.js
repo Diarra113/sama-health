@@ -21,7 +21,7 @@ function AdministrateursAdmin() {
 
   async function charger() {
     try {
-      const reponse = await axios.get("http://localhost:5000/api/admin/personnel", {
+      const reponse = await axios.get("http://127.0.0.1:5000/api/admin/personnel", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setAdministrateurs(reponse.data.administrateurs);
@@ -43,7 +43,7 @@ function AdministrateursAdmin() {
     setEnregistrement(true);
     try {
       const reponse = await axios.post(
-        "http://localhost:5000/api/admin/personnel",
+        "http://127.0.0.1:5000/api/admin/personnel",
         { ...formulaire, role: "administrateur" },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -66,7 +66,7 @@ function AdministrateursAdmin() {
   const supprimer = async (id, nomComplet) => {
     if (!window.confirm(`Supprimer le compte administrateur de ${nomComplet} ?`)) return;
     try {
-      await axios.delete(`http://localhost:5000/api/admin/personnel/${id}`, {
+      await axios.delete(`http://127.0.0.1:5000/api/admin/personnel/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       charger();
@@ -143,7 +143,7 @@ function AdministrateursAdmin() {
                 <p className="aa-recap">Communiquez ces identifiants à <strong>{compteCree.utilisateur.prenom} {compteCree.utilisateur.nom}</strong> :</p>
                 <div className="aa-identifiants">
                   <p>Email : <strong>{compteCree.utilisateur.email}</strong></p>
-                  <p>Mot de passe : <strong>{compteCree.motDePasse}</strong></p>
+                  <p>Mot de passe : <strong>{compteCree.motDePasseTemporaire}</strong></p>
                 </div>
                 <button className="aa-btn-creer" onClick={fermer}>Fermer</button>
               </>

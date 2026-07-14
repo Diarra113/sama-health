@@ -58,7 +58,7 @@ function AssistantIA() {
     const msg = message.toLowerCase();
 
     if (msg.includes("rendez-vous") || msg.includes("rdv")) {
-      return "Pour prendre un rendez-vous, allez dans 'Nos hôpitaux', choisissez un établissement, sélectionnez une spécialité et un créneau disponible. Votre demande sera confirmée par le responsable de service.";
+      return "Pour prendre un rendez-vous, allez dans 'Hôpitaux', choisissez un établissement, sélectionnez une spécialité et un créneau disponible. Votre demande sera confirmée par le responsable de service.";
     }
     if (msg.includes("ticket")) {
       return "Pour acheter un ticket du jour, rendez-vous dans 'Nos hôpitaux', choisissez votre hôpital et votre spécialité, puis procédez au paiement via Wave ou Orange Money.";
